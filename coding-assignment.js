@@ -101,6 +101,43 @@ function fullName(firstName, lastName){
     return firstName + " " + lastName;
 }
 
+/* Write a function that takes an array of numbers and returns true 
+if the sum of all the numbers in the array is greater than 100 */
+
+function sumGreater(numbers){
+    let sum = 0;
+    for(let i = 0; i < numbers.length; i++) {
+    sum += numbers[i]
+}
+return sum > 100;
+}
+
+console.log(sumGreater([120,150,130,180]))
+
+/* Write a function that takes an array of numbers and returns the average of all the elements in the array. */
+
+function average(num) {
+    let sum = 0;
+    for (let i = 0; i < num.length; i++) {
+      sum += num[i];
+    }
+    return sum / num.length;
+  }
+
+  console.log(average([6,8,15,9,20]))
+
+  /* Write a function called willBuyDrink that takes a boolean isHotOutside, 
+  and a number moneyInPocket, and returns true if it is hot outside and 
+  if moneyInPocket is greater than 10.50 */
+
+  function willBuyDrink(isHotOutside, moneyInPocket) {
+    if(isHotOutside && moneyInPocket > 10.50) {
+      return true;
+    }
+    return false;
+  }
+
+  console.log(willBuyDrink(true, 15));
 
 
 
